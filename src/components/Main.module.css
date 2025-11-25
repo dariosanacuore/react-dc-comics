@@ -1,0 +1,11 @@
+.contentText {
+    color: white;
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 200px;
+}
+
+.sectionContent {
+    background-color: black;
+    min-height: 100px;
+}
