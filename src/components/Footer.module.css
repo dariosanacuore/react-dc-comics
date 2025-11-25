@@ -1,0 +1,48 @@
+.footerList {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 200px;
+    gap: 20px;
+    background-image: url("../assets/img/footer-bg.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+.listFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listFooter li {
+    color: gray;
+}
+
+.listFooter li h2 {
+    color: white;
+}
+
+
+.socialList {
+    background-color: lightgray;
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonSign {
+    border: 1px solid blue;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: gray;
+}
+
+.bgWhite {
+    color: white;
+}
+
+.bgBlue {
+    color: blue;
+}
