@@ -1,5 +1,9 @@
 import style from "./Main.module.css";
-
+import dcimg from "../assets/img/buy-comics-digital-comics.png";
+import merchimg from "../assets/img/buy-comics-merchandise.png";
+import subimg from "../assets/img/buy-comics-subscriptions.png";
+import posimg from "../assets/img/buy-comics-shop-locator.png";
+import chargeimg from "../assets/img/buy-dc-power-visa.svg";
 function AppMain() {
     return (
         <main>
@@ -7,9 +11,16 @@ function AppMain() {
                 <h2 className={style.contentText}>Content goes here</h2>
             </section>
 
-            <section className=>
+            <section className={style.sectionContentList}>
+                <ul className={style.dFlexList}>
+                    <li className={style.listItem}> <img src={dcimg} alt="logo" /><span className={style.whiteBg}>DIGITAL COMICS</span></li>
+                    <li className={style.listItem}><img src={merchimg} alt="logo" /><span className={style.whiteBg}>DIGITAL COMICS</span></li>
+                    <li className={style.listItem}><img src={subimg} alt="logo" /><span className={style.whiteBg}>DIGITAL COMICS</span></li>
+                    <li className={style.listItem}><img src={posimg} alt="logo" /><span className={style.whiteBg}>DIGITAL COMICS</span></li>
+                    <li className={style.listItem}><img src={chargeimg} alt="logo" width="100" height="100" /><span className={style.whiteBg}>DIGITAL COMICS</span></li>
+                </ul>
 
-        </section>
+            </section>
         </main >
     );
 }

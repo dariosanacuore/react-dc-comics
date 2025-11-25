@@ -9,3 +9,21 @@
     background-color: black;
     min-height: 100px;
 }
+
+.sectionContentList {
+    background-color: blue;
+    min-height: 150px;
+}
+
+.whiteBg {
+    color: white;
+    vertical-align: middle;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
