@@ -17,8 +17,11 @@ function AppMain() {
                     {comics.map((card) => (
                         <div key={card.id} className={style.card}>
                             <img src={card.thumb} alt={card.title} className={style.cardImage} />
-                            {card.title.split(" ").slice(0, 2).join(" ")}
+                            <h3 className={style.cardTitle}>
+                                {card.title.split(" ").slice(0, 2).join(" ")}
+                            </h3>
                         </div>
+
                     ))}
                 </div>
             </section>

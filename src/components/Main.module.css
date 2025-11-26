@@ -37,7 +37,7 @@
 .container {
     min-height: 50vh;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1050px;
     width: 100%;
     background-color: black;
 }
@@ -51,26 +51,24 @@
 }
 
 .card {
-    width: 200px;
-    background-color: #fff;
+    width: 130px;
+    background-color: black;
+    flex-direction: column;
     border-radius: 10px;
-    overflow: hidden;
     padding: 10px;
     text-align: center;
 }
 
 .cardImage {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .cardTitle {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.cardDate {
-    font-size: 14px;
-    color: gray;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
 }
