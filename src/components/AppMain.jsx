@@ -4,11 +4,23 @@ import merchimg from "../assets/img/buy-comics-merchandise.png";
 import subimg from "../assets/img/buy-comics-subscriptions.png";
 import posimg from "../assets/img/buy-comics-shop-locator.png";
 import chargeimg from "../assets/img/buy-dc-power-visa.svg";
+import { comics } from "../assets/comics.js";
 function AppMain() {
     return (
         <main>
             <section className={style.sectionContent}>
                 <h2 className={style.contentText}>Content goes here</h2>
+            </section>
+
+            <section className={style.container}>
+                <div className={style.cardsWrapper}>
+                    {comics.map((card) => (
+                        <div key={card.id} className={style.card}>
+                            <img src={card.thumb} alt={card.title} className={style.cardImage} />
+                            {card.title.split(" ").slice(0, 2).join(" ")}
+                        </div>
+                    ))}
+                </div>
             </section>
 
             <section className={style.sectionContentList}>

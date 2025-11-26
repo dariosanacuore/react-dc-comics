@@ -33,3 +33,44 @@
     display: flex;
     justify-content: space-between;
 }
+
+.container {
+    min-height: 50vh;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    background-color: black;
+}
+
+/**cards */
+.cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cardDate {
+    font-size: 14px;
+    color: gray;
+}
