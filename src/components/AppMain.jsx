@@ -5,6 +5,7 @@ import subimg from "../assets/img/buy-comics-subscriptions.png";
 import posimg from "../assets/img/buy-comics-shop-locator.png";
 import chargeimg from "../assets/img/buy-dc-power-visa.svg";
 import { comics } from "../assets/comics.js";
+import ComicCard from "./ComicCard";
 function AppMain() {
     return (
         <main>
@@ -12,18 +13,14 @@ function AppMain() {
                 <h2 className={style.contentText}>Content goes here</h2>
             </section>
 
-            <section className={style.container}>
-                <div className={style.cardsWrapper}>
-                    {comics.map((card) => (
-                        <div key={card.id} className={style.card}>
-                            <img src={card.thumb} alt={card.title} className={style.cardImage} />
-                            <h3 className={style.cardTitle}>
-                                {card.title.split(" ").slice(0, 2).join(" ")}
-                            </h3>
-                        </div>
-
-                    ))}
-                </div>
+            <section className={style.cardsWrapper}>
+                {comics.map((card) => (
+                    <ComicCard
+                        key={card.id}
+                        title={card.title}
+                        thumb={card.thumb}
+                    />
+                ))}
             </section>
 
             <section className={style.sectionContentList}>
