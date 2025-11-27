@@ -13,15 +13,19 @@ function AppMain() {
                 <h2 className={style.contentText}>Content goes here</h2>
             </section>
 
-            <section className={style.cardsWrapper}>
-                {comics.map((card) => (
-                    <ComicCard
-                        key={card.id}
-                        title={card.title}
-                        thumb={card.thumb}
-                    />
-                ))}
+
+            <section className={style.cardsSection}>
+                <div className={style.cardsWrapper}>
+                    {comics.map((card) => (
+                        <ComicCard
+                            key={card.id}
+                            title={card.title}
+                            thumb={card.thumb}
+                        />
+                    ))}
+                </div>
             </section>
+
 
             <section className={style.sectionContentList}>
                 <ul className={style.dFlexList}>
